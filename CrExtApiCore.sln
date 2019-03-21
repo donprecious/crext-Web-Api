@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrExtApiCore", "CrExtApiCore\CrExtApiCore.csproj", "{2BC3E72B-AB43-408B-A669-0AC5FB9EDCA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrExtApiCore", "CrExtApiCore\CrExtApiCore.csproj", "{2BC3E72B-AB43-408B-A669-0AC5FB9EDCA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65253641-2540-4651-B716-9586DB4C126B}
 	EndGlobalSection
 EndGlobal
