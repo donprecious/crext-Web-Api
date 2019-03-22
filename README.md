@@ -49,4 +49,4 @@ reviewKindId: 1,
 else If Report was Selected then set
 
 ReviewActionId: 5 
-reviewKindId: 1,
+reviewKindId: 2,
