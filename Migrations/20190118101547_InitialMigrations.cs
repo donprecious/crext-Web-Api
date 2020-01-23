@@ -304,20 +304,20 @@ namespace CrExtApiCore.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Description = table.Column<string>(nullable: true),
                     ProjectId = table.Column<int>(nullable: false),
-                    ProjectsId = table.Column<int>(nullable: true),
+                    //ProjectsId = table.Column<int>(nullable: true),
                     TeamId = table.Column<int>(nullable: false),
-                    TeamsId = table.Column<int>(nullable: true),
+                    //TeamsId = table.Column<int>(nullable: true),
                     UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TeamMembers", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_TeamMembers_Projects_ProjectsId",
-                        column: x => x.ProjectsId,
-                        principalTable: "Projects",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                    //table.ForeignKey(
+                    //    name: "FK_TeamMembers_Projects_ProjectsId",
+                    //    column: x => x.ProjectsId,
+                    //    principalTable: "Projects",
+                    //    principalColumn: "Id",
+                    //    onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_TeamMembers_AspNetUsers_UserId",
                         column: x => x.UserId,
@@ -335,7 +335,7 @@ namespace CrExtApiCore.Migrations
                     Description = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
                     ProjectId = table.Column<int>(nullable: false),
-                    TeamMembersId = table.Column<int>(nullable: true)
+                    //TeamMembersId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -346,12 +346,12 @@ namespace CrExtApiCore.Migrations
                         principalTable: "Projects",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Teams_TeamMembers_TeamMembersId",
-                        column: x => x.TeamMembersId,
-                        principalTable: "TeamMembers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                    //table.ForeignKey(
+                    //    name: "FK_Teams_TeamMembers_TeamMembersId",
+                    //    column: x => x.TeamMembersId,
+                    //    principalTable: "TeamMembers",
+                    //    principalColumn: "Id",
+                    //    onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -432,15 +432,15 @@ namespace CrExtApiCore.Migrations
                 table: "AspNetRoles",
                 column: "packageId");
 
-            migrationBuilder.CreateIndex(
-                name: "IX_TeamMembers_ProjectsId",
-                table: "TeamMembers",
-                column: "ProjectsId");
+            //migrationBuilder.CreateIndex(
+            //    name: "IX_TeamMembers_ProjectsId",
+            //    table: "TeamMembers",
+            //    column: "ProjectsId");
 
-            migrationBuilder.CreateIndex(
-                name: "IX_TeamMembers_TeamsId",
-                table: "TeamMembers",
-                column: "TeamsId");
+            //migrationBuilder.CreateIndex(
+            //    name: "IX_TeamMembers_TeamsId",
+            //    table: "TeamMembers",
+            //    column: "TeamsId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TeamMembers_UserId",
@@ -452,10 +452,10 @@ namespace CrExtApiCore.Migrations
                 table: "Teams",
                 column: "ProjectId");
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Teams_TeamMembersId",
-                table: "Teams",
-                column: "TeamMembersId");
+            //migrationBuilder.CreateIndex(
+            //    name: "IX_Teams_TeamMembersId",
+            //    table: "Teams",
+            //    column: "TeamMembersId");
 
             migrationBuilder.CreateIndex(
                 name: "EmailIndex",
@@ -496,13 +496,13 @@ namespace CrExtApiCore.Migrations
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_TeamMembers_Teams_TeamsId",
-                table: "TeamMembers",
-                column: "TeamsId",
-                principalTable: "Teams",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Restrict);
+            //migrationBuilder.AddForeignKey(
+            //    name: "FK_TeamMembers_Teams_TeamsId",
+            //    table: "TeamMembers",
+            //    column: "TeamsId",
+            //    principalTable: "Teams",
+            //    principalColumn: "Id",
+            //    onDelete: ReferentialAction.Restrict);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

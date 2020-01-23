@@ -42,10 +42,10 @@ namespace CrExtApiCore.Migrations
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
 
-            migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_TeamMembersId",
-                table: "AspNetUsers",
-                column: "TeamMembersId");
+            //migrationBuilder.CreateIndex(
+            //    name: "IX_AspNetUsers_TeamMembersId",
+            //    table: "AspNetUsers",
+            //    column: "TeamMembersId");
 
             migrationBuilder.CreateIndex(
                 name: "RoleNameIndex",
@@ -54,13 +54,13 @@ namespace CrExtApiCore.Migrations
                 unique: true,
                 filter: "[NormalizedName] IS NOT NULL");
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_AspNetUsers_TeamMembers_TeamMembersId",
-                table: "AspNetUsers",
-                column: "TeamMembersId",
-                principalTable: "TeamMembers",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Restrict);
+            //migrationBuilder.AddForeignKey(
+            //    name: "FK_AspNetUsers_TeamMembers_TeamMembersId",
+            //    table: "AspNetUsers",
+            //    column: "TeamMembersId",
+            //    principalTable: "TeamMembers",
+            //    principalColumn: "Id",
+            //    onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_AspNetUserTokens_AspNetUsers_UserId",
@@ -73,9 +73,9 @@ namespace CrExtApiCore.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_AspNetUsers_TeamMembers_TeamMembersId",
-                table: "AspNetUsers");
+            //migrationBuilder.DropForeignKey(
+            //    name: "FK_AspNetUsers_TeamMembers_TeamMembersId",
+            //    table: "AspNetUsers");
 
             migrationBuilder.DropForeignKey(
                 name: "FK_AspNetUserTokens_AspNetUsers_UserId",

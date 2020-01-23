@@ -66,13 +66,13 @@ namespace Entities
 
             modelBuilder.Entity<Teams>().HasOne(a => a.Project);
             modelBuilder.Entity<Teams>().HasOne(a => a.organisation);
-            modelBuilder.Entity<Teams>().HasMany(a => a.TeamMembers);
+            modelBuilder.Entity<Teams>().HasMany(a => a.TeamMembers).WithOne(a=>a.Teams);
 
 
             //modelBuilder.Entity<Teams>();
 
             modelBuilder.Entity<TeamMembers>().HasOne(a => a.Projects);
-            modelBuilder.Entity<TeamMembers>().HasOne(a => a.Teams).WithMany(a=>a.TeamMembers);
+            //modelBuilder.Entity<TeamMembers>().HasOne(a => a.Teams).WithMany(a=>a.TeamMembers);
                 
             modelBuilder.Entity<TeamMembers>().HasOne(a => a.User);
          

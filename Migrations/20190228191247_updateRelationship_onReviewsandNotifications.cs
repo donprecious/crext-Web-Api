@@ -8,17 +8,17 @@ namespace CrExtApiCore.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_AspNetUsers_TeamMembers_TeamMembersId",
-                table: "AspNetUsers");
+            //migrationBuilder.DropForeignKey(
+            //    name: "FK_AspNetUsers_TeamMembers_TeamMembersId",
+            //    table: "AspNetUsers");
 
-            migrationBuilder.DropIndex(
-                name: "IX_AspNetUsers_TeamMembersId",
-                table: "AspNetUsers");
+            //migrationBuilder.DropIndex(
+            //    name: "IX_AspNetUsers_TeamMembersId",
+            //    table: "AspNetUsers");
 
-            migrationBuilder.DropColumn(
-                name: "TeamMembersId",
-                table: "AspNetUsers");
+            //migrationBuilder.DropColumn(
+            //    name: "TeamMembersId",
+            //    table: "AspNetUsers");
 
             migrationBuilder.AlterColumn<string>(
                 name: "UserId",

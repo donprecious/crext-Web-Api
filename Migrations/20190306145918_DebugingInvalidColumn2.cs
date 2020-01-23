@@ -8,23 +8,24 @@ namespace CrExtApiCore.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<int>(
-            name: "ReviewNotificationsId",
-            table: "Projects",
-            nullable: true);
+            
+            //migrationBuilder.AddColumn<int>(
+            //name: "ReviewNotificationsId",
+            //table: "Projects",
+            //nullable: true);
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Projects_ReviewNotificationsId",
-                table: "Projects",
-                column: "ReviewNotificationsId");
+            //migrationBuilder.CreateIndex(
+            //    name: "IX_Projects_ReviewNotificationsId",
+            //    table: "Projects",
+            //    column: "ReviewNotificationsId");
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_Projects_ReviewNotifications_ReviewNotificationsId",
-                table: "Projects",
-                column: "ReviewNotificationsId",
-                principalTable: "ReviewNotifications",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Restrict);
+            //migrationBuilder.AddForeignKey(
+            //    name: "FK_Projects_ReviewNotifications_ReviewNotificationsId",
+            //    table: "Projects",
+            //    column: "ReviewNotificationsId",
+            //    principalTable: "ReviewNotifications",
+            //    principalColumn: "Id",
+            //    onDelete: ReferentialAction.Restrict);
         
         migrationBuilder.DropForeignKey(
                 name: "FK_Projects_ReviewNotifications_ReviewNotificationsId",
@@ -46,10 +47,10 @@ namespace CrExtApiCore.Migrations
                 table: "Projects",
                 nullable: true);
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Projects_ReviewNotificationsId",
-                table: "Projects",
-                column: "ReviewNotificationsId");
+            //migrationBuilder.CreateIndex(
+            //    name: "IX_Projects_ReviewNotificationsId",
+            //    table: "Projects",
+            //    column: "ReviewNotificationsId");
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Projects_ReviewNotifications_ReviewNotificationsId",

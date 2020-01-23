@@ -26,9 +26,9 @@ namespace Entities
         [ForeignKey("ProjectId")]
         public Projects Projects { get; set; }
 
-        //public ICollection<Reviews> Reviews { get; set; }
+        public ICollection<Reviews> Reviews { get; set; }
 
-        
+
 
     }
 }

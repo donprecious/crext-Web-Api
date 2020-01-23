@@ -9,3 +9,16 @@ C:\Users\Donprecious\documents\visual studio 2017\Projects\CrExtApiCore\CrExtApi
 C:\Users\Donprecious\documents\visual studio 2017\Projects\CrExtApiCore\CrExtApiCore\obj\Debug\netcoreapp2.0\CrExtApiCore.dll
 C:\Users\Donprecious\documents\visual studio 2017\Projects\CrExtApiCore\CrExtApiCore\obj\Debug\netcoreapp2.0\CrExtApiCore.pdb
 C:\Users\Donprecious\documents\visual studio 2017\Projects\CrExtApiCore\CrExtApiCore\obj\Debug\netcoreapp2.0\CrExtApiCore.csprojAssemblyReference.cache
+I:\ProJects\crext\CrExtApiCore\bin\Debug\netcoreapp2.0\appsettings.Development.json
+I:\ProJects\crext\CrExtApiCore\bin\Debug\netcoreapp2.0\appsettings.json
+I:\ProJects\crext\CrExtApiCore\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+I:\ProJects\crext\CrExtApiCore\bin\Debug\netcoreapp2.0\CrExtApiCore.deps.json
+I:\ProJects\crext\CrExtApiCore\bin\Debug\netcoreapp2.0\CrExtApiCore.runtimeconfig.json
+I:\ProJects\crext\CrExtApiCore\bin\Debug\netcoreapp2.0\CrExtApiCore.runtimeconfig.dev.json
+I:\ProJects\crext\CrExtApiCore\bin\Debug\netcoreapp2.0\CrExtApiCore.dll
+I:\ProJects\crext\CrExtApiCore\bin\Debug\netcoreapp2.0\CrExtApiCore.pdb
+I:\ProJects\crext\CrExtApiCore\obj\Debug\netcoreapp2.0\CrExtApiCore.csprojAssemblyReference.cache
+I:\ProJects\crext\CrExtApiCore\obj\Debug\netcoreapp2.0\CrExtApiCore.AssemblyInfoInputs.cache
+I:\ProJects\crext\CrExtApiCore\obj\Debug\netcoreapp2.0\CrExtApiCore.AssemblyInfo.cs
+I:\ProJects\crext\CrExtApiCore\obj\Debug\netcoreapp2.0\CrExtApiCore.dll
+I:\ProJects\crext\CrExtApiCore\obj\Debug\netcoreapp2.0\CrExtApiCore.pdb
